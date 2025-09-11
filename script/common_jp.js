@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function(e){
     animationOnHandler();
     headerScrollHandler();
-    bodyScroll();
+    // bodyScroll();
     privacyUsePopup();
 })
 document.addEventListener("scroll", function(){

@@ -59,7 +59,8 @@ select::-ms-expand{ display:none; }
 
 
 /* @ header @ */
-header { width: 100%; padding: 20px 0; transition: all 500ms; position: fixed; top: 0; left: 0; z-index: 101; }
+header { width: 100%; padding: 20px 0; transition: all 500ms; position: fixed; top: 0; left: 0; z-index: 101;  }
+header.on { background: var(--white-color); box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.10); }
 header .inner { display: flex; justify-content: space-between; align-items: center; background-color: transparent; }
 header .logo {  }
 header nav {  }
@@ -82,7 +83,7 @@ header nav ul li:hover{color: #3797A6;}
 
 main { font-family: 'Paperlogy'; }
 /* sec1 */
-section.sec1 { background: url('../img/main/sec1/bg.jpg') no-repeat center / cover; min-height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; text-align: center;  }
+section.sec1 { background: url('../img/main/sec1/bg.jpg') no-repeat center / cover; min-height: calc(100vh); display: flex; align-items: center; justify-content: center; text-align: center;  }
 section.sec1 .inner {  }
 .sec1 .sec1_title { font-size: 96px; font-weight: 700; background: var(--gradient);   -webkit-background-clip: text;   -webkit-text-fill-color: transparent;}
 .sec1 .t1 {font-size: 42px; font-weight: 700; margin: 20px 0 40px; }
@@ -170,7 +171,7 @@ footer .box1 .sns_ul li {  }
 
 footer .f_title { font-size: 28px; font-weight: 500; font-family: "Outfit", sans-serif; color: var(--main-color); }
 footer .inner { display: flex; justify-content: space-between; }
-footer .box2 { display: flex;  flex-direction: column;}
+footer .box2 { padding: 40px; display: flex;  flex-direction: column; background: #ECECEC; border-radius: 10px;}
 footer .box2 .item { display: flex; align-items: center; gap: 10px; }
 footer .box2 .item .text { font-size: 24px; font-family: "Outfit", sans-serif; color: var(--main-color); }
 footer .box2 .box2_titleBox { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
@@ -182,6 +183,7 @@ footer .formBox .ipt::placeholder{ color: #888; font-weight: 400; font-size: 14p
 footer .formBox .formList .iptBox { margin-top: 15px; }
 footer .formBox .conBtn{ border-radius: 5px; width: 100%; padding: 20px 0; background: var(--main-color); border: none;}
 footer .formList .label span { color: var(--main-color); }
-footer .agreeCheckDiv label input[type="checkbox"] + .textBox { color: #fff; }
-footer .agreeCheckDiv label input[type="checkbox"] + .textBox::before { border: 1px solid #fff; }
+footer .agreeCheckDiv label input[type="checkbox"] + .textBox { color: var(--black-color); }
+footer .agreeCheckDiv label input[type="checkbox"] + .textBox::before { border: 1px solid var(--black-color); }
 footer input[type=text], input[type=password], textarea { color: #151515; }
+footer .formList > li { color: var(--black-color); }

@@ -185,11 +185,12 @@ section.sec1 .inner {  }
 }
 @media screen and (max-width: 480px) {
     .sec1 .sec1_title { font-size: 13vw; }
-    .sec1 .t1 { font-size: 6vw; }
+    .sec1 .t1 { font-size: 6vw; margin: 5px 0 20px; }
     .sec1 ul { flex-direction: column; }
     .sec1 ul li { max-width: 200px; width: 100%; font-size: 5vw; padding: 13px 10px; }
-    .sec1 .t2 { font-size: 5vw; }
+    .sec1 .t2 { font-size: 5vw; margin: 20px 0 40px; }
     .sec1 .sec1_btn { border: 1px solid var(--black-color); }
+    section.sec1 { padding-top: 40px; }
 }
 
 

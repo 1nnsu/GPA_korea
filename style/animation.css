@@ -1,6 +1,79 @@
 @charset "utf-8";
 /* animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; */
 
+/* sec1 */
+.sec1 .sec1_title { opacity: 0; }
+.sec1.on .sec1_title { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sec1 .t1 { opacity: 0; }
+.sec1.on .t1 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.1s; }
+.sec1 .t2 { opacity: 0; }
+.sec1.on .t2 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+.sec1 ul li.l_1 { opacity: 0; }
+.sec1.on ul li.l_1 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s;}
+.sec1 ul li.l_2 { opacity: 0; }
+.sec1.on ul li.l_2 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s;}
+.sec1 ul li.l_3 { opacity: 0; }
+.sec1.on ul li.l_3 { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s;}
+.sec1 .sec1_btn_hover { opacity: 0; }
+.sec1.on .sec1_btn_hover { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
+/* sec2 */
+.sec2 .titleBox { opacity: 0; }
+.sec2 .titleBox.on { animation: fadeIn2 0.5s ease-in-out 0s 1 forwards running; }
+.sec2 .circle_Ul li:nth-child(1) { opacity: 0; }
+.sec2 .circle_Ul.on li:nth-child(1) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.1s; }
+.sec2 .circle_Ul li:nth-child(2) { opacity: 0; }
+.sec2 .circle_Ul.on li:nth-child(2) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+.sec2 .circle_Ul li:nth-child(3) { opacity: 0; }
+.sec2 .circle_Ul.on li:nth-child(3) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.5s; }
+
+/* sec3 */
+.sec3 .titleBox { opacity: 0; }
+.sec3 .titleBox.on { animation: fadeIn2 0.5s ease-in-out 0s 1 forwards running; }
+.sec3 .circle_Ul li:nth-child(1) { opacity: 0; }
+.sec3 .circle_Ul.on li:nth-child(1) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.1s; }
+.sec3 .circle_Ul li:nth-child(2) { opacity: 0; }
+.sec3 .circle_Ul.on li:nth-child(2) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+.sec3 .circle_Ul li:nth-child(3) { opacity: 0; }
+.sec3 .circle_Ul.on li:nth-child(3) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.5s; }
+
+/* sec4_1 */
+.sec4_1 .titleBox { opacity: 0; }
+.sec4_1 .titleBox.on { animation: fadeIn2 0.5s ease-in-out 0s 1 forwards running; }
+.sec4_1 .sec4_img1{ opacity: 0; }
+.sec4_1 .sec4_img1.on{ animation: zoomIn 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.3s; }
+
+/* sec4_2 */
+.sec4_2 .sec4_2_title { opacity: 0; }
+.sec4_2 .sec4_2_title.on { animation: fadeIn2 0.5s ease-in-out 0s 1 forwards running; }
+.sec4_2 ul li:nth-child(1) { opacity: 0; }
+.sec4_2 ul.on li:nth-child(1) { animation: showHide 0.5s ease-in-out 0s 1 forwards running;animation-delay: 0.1s;  }
+.sec4_2 ul li:nth-child(2) { opacity: 0; }
+.sec4_2 ul.on li:nth-child(2) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+.sec4_2 ul li:nth-child(3) { opacity: 0; }
+.sec4_2 ul.on li:nth-child(3) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+.sec4_2 ul li:nth-child(4) { opacity: 0; }
+.sec4_2 ul.on li:nth-child(4) { animation: showHide 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s; }
+
+.sec4_2 .sec4_banner .t1 { opacity: 0; }
+.sec4_2 .sec4_banner .t1.on { animation: fadeIn2 0.5s ease-in-out 0s 1 forwards running; }
+.sec4_2 .sec4_banner .se4_banner_img { opacity: 0; }
+.sec4_2 .sec4_banner .se4_banner_img.on { animation: showHide 0.5s ease-in-out 0s 1 forwards running; }
+
+/* sec5 */
+.sec5 .sec5_title { opacity: 0; }
+.sec5 .sec5_title.on{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sec5 .t1 { opacity: 0; }
+.sec5 .t1.on{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+.sec5 .sec5_btn { opacity: 0; }
+.sec5 .sec5_btn.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn2 { 0% { opacity: 0; transform: translate3d(-30px, 0, 0); } 100% { opacity: 1; transform: translate3d(0, 0, 0); } }
 
 @keyframes fadeIn {
     0% {transform: translate3d(0px, 30px, 0px); }
@@ -17,4 +90,8 @@
 @keyframes fadeInLeft {
     0% { opacity: 0; transform: translate3d(-30px, 0, 0px); }
     100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+}
+
+@keyframes showHide { 
+  from { opacity: 0; transform: translateY(10px); filter: blur(4px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } 
 }

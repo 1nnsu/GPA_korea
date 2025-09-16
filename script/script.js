@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(e){
     scrollTopBtn();
     countWrap();
+    countingNumberHandler()
 })
 
 const scrollTopBtn = () => {
@@ -26,6 +27,7 @@ const scrollTopBtn = () => {
     });
 }
 
+// 카운트1
 const countWrap = () => {
     $('.counting').each(function() {
         var $this = $(this),
@@ -45,6 +47,64 @@ const countWrap = () => {
             }
         );
     });
+
+    
 }
+// 카운트 그 섹션 도달하면 실행
+const countingNumberHandler = () => {
+    const countList = document.querySelector('.sec4_2');
+    const numbers = document.querySelectorAll('.sec4_2 .counting');
+    const duration = 1; // Duration in seconds
+    if(countList){
+        // Function to reset numbers to 0
+        function resetNumbers() {
+            numbers.forEach(number => {
+                number.textContent = '0';
+            });
+        }
+
+        // Function to format numbers with commas
+        function formatNumber(num) {
+            return num.toLocaleString();
+        }
+
+        // Function to animate counting
+        function animateCount() {
+            numbers.forEach(number => {
+                const target = +number.getAttribute('data-count');
+                const increment = target / (duration * 60); // 60 frames per second
+                let current = 0;
+
+                function updateCount() {
+                    current += increment;
+                    if (current < target) {
+                        number.textContent = formatNumber(Math.ceil(current));
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        number.textContent = formatNumber(target);
+                    }
+                }
+                updateCount();
+            });
+        }
+
+        // Intersection Observer to detect visibility
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    countList.classList.add('on');
+                    animateCount();
+                } else {
+                    countList.classList.remove('on');
+                    resetNumbers();
+                }
+            });
+        }, {
+            threshold: 0.5 // Adjust threshold as needed
+        });
+        observer.observe(countList);
+    }
+}
+
 
 

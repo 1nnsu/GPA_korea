@@ -105,10 +105,12 @@ header nav ul li:hover{color: #3797A6;}
 /* @ main @ */
 
 /* common */
-main .titleBox { display: flex; flex-direction: column; gap: 10px; }
-main .titleBox .stick { width: 80px; height: 6px; background: var(--main-color); }
-main .titleBox .sec_title { font-size: 72px; font-weight: 500; color: var(--main-color); }
-main .titleBox .sec_title_text { font-size: 64px; line-height: 1.5; font-weight: 700; margin-top: 40px; }
+.titleBox { display: flex; flex-direction: column; gap: 10px; }
+.titleBox .stick { width: 80px; height: 6px; background: var(--main-color); }
+.sec2 .titleBox .stick { width: 80px; height: 6px; background: var(--white-color); }
+.sec4 .titleBox .stick { background: var(--white-color); }
+.titleBox .sec_title { font-size: 72px; font-weight: 500; color: var(--white-color); }
+.titleBox .sec_title_text { font-size: 64px; line-height: 1.5; font-weight: 700; margin-top: 40px; color: var(--white-color); }
 section p { transition:  font-size 200ms; }
 main { font-family: 'Paperlogy'; }
 .br1024{ display: none; }
@@ -117,16 +119,16 @@ main { font-family: 'Paperlogy'; }
 .br480{ display: none; }
 
 @media screen and (max-width: 1440px) {
-    main .titleBox .stick { width: 60px; }
-    main .titleBox .sec_title { font-size: 54px; }
-    main .titleBox .sec_title_text { font-size: 42px; }
+    .titleBox .stick { width: 60px; }
+    .titleBox .sec_title { font-size: 54px; }
+    .titleBox .sec_title_text { font-size: 42px; }
 }
 
 @media screen and (max-width: 1024px) {
     .br1024{ display: block; }
-    main .titleBox .stick { margin: 0 auto; }
-    main .titleBox .sec_title { text-align: center; }
-    main .titleBox .sec_title_text { text-align: center; margin-top: 20px;}
+    .titleBox .stick { margin: 0 auto; }
+    .titleBox .sec_title { text-align: center; }
+    .titleBox .sec_title_text { text-align: center; margin-top: 20px;}
 
 }
 @media screen and (max-width: 800px) {
@@ -134,8 +136,8 @@ main { font-family: 'Paperlogy'; }
 }
 
 @media screen and (max-width: 768px) {
-    main .titleBox .sec_title { font-size: 42px; }
-    main .titleBox .sec_title_text { font-size: 32px; }
+    .titleBox .sec_title { font-size: 42px; }
+    .titleBox .sec_title_text { font-size: 32px; }
 }
 @media screen and (max-width: 530px) {
     .br530{ display: block; }
@@ -143,9 +145,9 @@ main { font-family: 'Paperlogy'; }
 @media screen and (max-width: 480px) {
     .br480{ display: block; }
     
-    main .titleBox .stick { height: 3px; }
-    main .titleBox .sec_title { font-size: 9vw; }
-    main .titleBox .sec_title_text { font-size: 7vw; }
+    .titleBox .stick { height: 3px; }
+    .titleBox .sec_title { font-size: 9vw; }
+    .titleBox .sec_title_text { font-size: 7vw; }
 }
 /* sec1 */
 section.sec1 { background: url('../img/main/sec1/bg.jpg') no-repeat center / cover; min-height: calc(100vh); display: flex; align-items: center; justify-content: center; text-align: center;  }
@@ -260,7 +262,7 @@ section.sec3{background: url('../img/main/sec3/bg.jpg') no-repeat center / cover
 section.sec3 .inner {}
 section.sec3 .stick { background; }
 section.sec3 .sec_title { color: var(--main-color); }
-section.sec3 .sec_title_text { font-size: 48px;  }
+section.sec3 .sec_title_text { font-size: 48px; color: var(--black-color); }
 section.sec3 .sec3_div{ padding: 80px 60px; background: var(--white-color); display: flex; align-items: center; justify-content: space-between; border-radius: 20px; }
 
 section.sec3 .circle_Ul {  }
@@ -397,7 +399,7 @@ section.sec5 { background: url('../img/main/sec5/bg.jpg') no-repeat center / cov
 .sec5 .sec5_title { width: fit-content; margin: 0 auto;  font-size: 64px; font-weight: 700; background: var(--gradient);  background: linear-gradient(90deg, #AEC74F 24.86%, #399EB0 75.05%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .sec5 .t1 { font-size: 36px; line-height: 1.6; font-weight: 700; margin: 20px 0 70px; font-family: 'Pretendard', sans-serif; color: var(--white-color); }
 .sec5 .sec5_btn { width: 200px; background: linear-gradient(90deg, #AEC74F 0%, #399EB0 100%); border: none; color: var(--white-color); padding: 15px 0; font-size: 20px; font-weight: 700; border-radius: 5px; }
-
+.sec5 a { width: fit-content ; height: 100%; display: block; margin: 0 auto;  }
 @media screen and (max-width: 1440px) {
     
 }

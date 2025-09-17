@@ -451,6 +451,9 @@ footer .agreeCheckDiv label input[type="checkbox"] + .textBox::before { border: 
 footer input[type=text], input[type=password], textarea { color: #151515; }
 footer .formList > li { color: var(--black-color); }
 
+.privacyPopup .titleBox { flex-direction: row; }
+
+
 @media screen and (max-width: 1440px) {
     
 }
